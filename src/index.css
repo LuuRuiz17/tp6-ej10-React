@@ -38,6 +38,12 @@ main{
     .form{
       width: 75%;
     }
+    
+    main{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
 }
 
 @media (min-width: 991px) {

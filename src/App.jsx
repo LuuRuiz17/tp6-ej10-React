@@ -20,7 +20,7 @@ function App() {
           </Container>
         </Navbar>
       </header>
-      <main className='color-loop container d-flex flex-column align-items-center'>
+      <main className='color-loop container'>
         <h1 className='text-center text-light my-3'>Alta de Películas</h1>
         <FormPeliculas></FormPeliculas>
       </main>
