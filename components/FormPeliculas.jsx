@@ -86,7 +86,7 @@ function FormPeliculas() {
                     {errors.genero?.message}
                 </Form.Text>
                 <div className="d-flex">
-                    <button className='ms-auto btn-form' variant="primary" type="submit">
+                    <button className='ms-auto btn-form mt-2' variant="primary" type="submit">
                         Añadir
                     </button>
                 </div>
