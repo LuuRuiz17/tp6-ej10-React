@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar , Nav , Container } from 'react-bootstrap';
 import FormPeliculas from '../components/FormPeliculas';
+import ListaPeliculas from '../components/ListaPeliculas';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
         <Navbar expand="lg" className="navbar">
           <Container>
             <Navbar.Brand className='text-light' href="#home">Películas</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle className='toggle' aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
                 <Nav.Link className='text-light' href="#home">Inicio</Nav.Link>
@@ -21,8 +22,9 @@ function App() {
         </Navbar>
       </header>
       <main className='color-loop container'>
-        <h1 className='text-center text-light my-3'>Alta de Películas</h1>
+        <h1 className='text-center text-light my-3'>Agregar Películas</h1>
         <FormPeliculas></FormPeliculas>
+        <ListaPeliculas></ListaPeliculas>
       </main>
       <footer className='footer py-4 text-center text-light'>
         &copy; Todos los derechos reservados
