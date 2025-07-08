@@ -43,7 +43,7 @@ function FormPeliculas() {
                             message: 'El nombre de la película debe tener al menos 2 caracteres.'
                         },
                         maxLength: {
-                            value: 30,
+                            value: 60,
                             message: 'El nombre de la película debe tener hasta 30 caracteres.'
                         }
                     })} />
@@ -77,13 +77,13 @@ function FormPeliculas() {
                             message: 'El género debe tener al menos 3 caracteres.'
                         },
                         maxLength: {
-                            value: 15,
-                            message: 'El género debe tener hasta 15 caracteres.'
+                            value: 30,
+                            message: 'El género debe tener hasta 30 caracteres.'
                         }
                     })} />
                 </Form.Group>
                 <Form.Text className="text-danger my-1">
-                    {errors.descripcion?.message}
+                    {errors.genero?.message}
                 </Form.Text>
                 <div className="d-flex">
                     <button className='ms-auto btn-form' variant="primary" type="submit">

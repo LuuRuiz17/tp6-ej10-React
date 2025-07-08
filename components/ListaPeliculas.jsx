@@ -1,17 +1,19 @@
-import { ListGroup } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import CardPelicula from "./CardPelicula";
 
 const ListaPeliculas = ({ peliculas }) => {
     return (
         <section className="my-3 lista-peliculas">
             <h2 className="my-3 text-light text-center">Lista de Películas</h2>
-            <ListGroup>
+            <Row>
                 {
                     peliculas.map((pelicula , indice) => (
-                        <CardPelicula key = {indice} pelicula = {pelicula}></CardPelicula>
+                        <div key = {indice} className="col-md-4 mb-3">
+                            <CardPelicula pelicula = {pelicula}></CardPelicula>
+                        </div>
                     ))
                 }
-            </ListGroup>
+            </Row>
         </section>
     );
 };
