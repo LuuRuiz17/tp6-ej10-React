@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar , Nav , Container } from 'react-bootstrap';
+import FormPeliculas from '../components/FormPeliculas';
 
 function App() {
 
@@ -19,8 +20,9 @@ function App() {
           </Container>
         </Navbar>
       </header>
-      <main className='color-loop'>
-        <h1 className='text-center titulo my-2'>Alta de Películas</h1>
+      <main className='color-loop container d-flex flex-column align-items-center'>
+        <h1 className='text-center text-light my-3'>Alta de Películas</h1>
+        <FormPeliculas></FormPeliculas>
       </main>
       <footer className='footer py-4 text-center text-light'>
         &copy; Todos los derechos reservados
