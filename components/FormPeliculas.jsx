@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 import { useForm } from "react-hook-form";
 import ListaPeliculas from '../components/ListaPeliculas';
@@ -12,7 +12,14 @@ function FormPeliculas() {
         reset
     } = useForm()
 
-    const [peliculas, setPelicula] = useState([])
+    const peliculasLocalStorage = JSON.parse(localStorage.getItem('peliculas')) || [];
+    const [peliculas, setPelicula] = useState(peliculasLocalStorage)
+
+    useEffect(() => {
+        if (peliculas.length > 0) {
+            localStorage.setItem('peliculas', JSON.stringify(peliculas));
+        }
+    }, [peliculas]);
 
     const agregarPelicula = (dato) => {
         const pelicula = {

@@ -2,7 +2,7 @@ import { Card , ListGroup } from 'react-bootstrap';
 
 function CardPelicula({pelicula}) {
   return (
-    <Card className='card'>
+    <Card className='card mb-3'>
       <Card.Body>
         <Card.Title className='text-light'>{pelicula.nombre}</Card.Title>
       </Card.Body>
