@@ -53,7 +53,7 @@ function FormPeliculas() {
                 </Form.Group>
                 <Form.Group className="mb-2 text-light fw-bold" controlId="formDescripcion">
                     <Form.Label>Descripción</Form.Label>
-                    <Form.Control type="text" placeholder="Ingresa la descripción de la película" {...register('descripcion', {
+                    <Form.Control as="textarea" rows={3} placeholder="Ingresa la descripción de la película" {...register('descripcion', {
                         required: 'Este campo es obligatorio',
                         minLength: {
                             value: 10,
