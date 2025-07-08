@@ -1,0 +1,19 @@
+#root{
+  background-color:  rgba(51, 4, 182, 0.873);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  flex-grow: 1;
+}
+
+.navbar,
+.footer{
+  background-color: rgb(90,33,248);
+}
+
+.titulo{
+  color: rgb(251, 209, 251);
+}
