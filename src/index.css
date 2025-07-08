@@ -1,29 +1,28 @@
-#root{
-  background-color:rgba(51, 4, 182, 0.873);
+#root {
+  background-color: rgba(51, 4, 182, 0.873);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-main{
+main {
   flex-grow: 1;
 }
 
 .navbar,
 .footer,
 .form,
-.lista-peliculas .card{
-  background-color: rgb(90,33,248);
+.lista-peliculas .card {
+  background-color: rgb(90, 33, 248);
 }
 
 .navbar-toggler-icon {
   /* Usé esto para cambiar el color de las líneas del botón de hamburguesas (cambia el blanco a negro, o viceversa) */
-  filter: invert(1); 
+  filter: invert(1);
 }
 
-
 .form,
-.lista-peliculas .card{
+.lista-peliculas .card {
   border: 3px groove rgba(247, 95, 247, 0.243);
 }
 
@@ -31,10 +30,10 @@ main{
 .form .form-select:focus {
   outline: none;
   border-color: rgba(247, 95, 247, 0.8);
-  box-shadow: 0 0 0 2px rgba(247, 95, 247, 0.3); 
+  box-shadow: 0 0 0 2px rgba(247, 95, 247, 0.3);
 }
 
-.form .btn-form{
+.form .btn-form {
   background-color: rgba(247, 95, 247, 0.8);
   border: none;
   padding: 5px 10px;
@@ -43,19 +42,19 @@ main{
 }
 
 @media (min-width: 768px) {
-    .form{
-      width: 75%;
-    }
+  .form {
+    width: 75%;
+  }
 
-    main{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-    }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (min-width: 991px) {
-    .form{
-      width: 50%;
-    }
+  .form {
+    width: 50%;
+  }
 }

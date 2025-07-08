@@ -3,7 +3,7 @@ import CardPelicula from "./CardPelicula";
 
 const ListaPeliculas = () => {
     return (
-        <section className="mt-3 mb-5 lista-peliculas">
+        <section className="my-3 lista-peliculas">
             <h2 className="my-3 text-light text-center">Lista de Películas</h2>
             <ListGroup>
                 <CardPelicula></CardPelicula>
